@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="Malaktit">#0BDA51</color>
+    <color name="White">#ffffff</color>
+    <color name="Grey">#5CA3A3A3</color>
+    <color name="Black">#000000</color>
+</resources>

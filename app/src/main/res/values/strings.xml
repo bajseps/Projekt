@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Crop Management</string>
+
+    <string-array name="crops">
+        <item>Corn</item>
+        <item>Potato</item>
+        <item>Wheat</item>
+    </string-array>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityCropAdvance"
+    android:background="@color/Grey">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:layout_marginStart="@dimen/margin10"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin60"
+        android:layout_marginEnd="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Čas sejanja"
+        />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cmSeedingTime"
+        android:layout_marginStart="@dimen/margin10"
+        android:layout_marginLeft="@dimen/margin10"
+        android:layout_marginTop="@dimen/margin10"
+        android:layout_marginEnd="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStart"
+        android:layout_marginBottom="@dimen/margin60"
+        android:layout_marginStart="@dimen/margin10"
+        android:layout_marginLeft="@dimen/margin10"
+        android:text="Start"
+        android:onClick="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnStop"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/Malaktit"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStop"
+        android:layout_marginBottom="@dimen/margin60"
+        android:text="Stop"
+        android:onClick="stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnStart"
+        app:layout_constraintStart_toEndOf="@id/btnReset"
+        android:background="@color/colorAccent"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnReset"
+        android:layout_marginBottom="@dimen/margin60"
+        android:layout_marginEnd="@dimen/margin10"
+        android:layout_marginRight="@dimen/margin10"
+        android:text="Reset"
+        android:onClick="reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnStop"
+        android:background="@color/colorPrimary"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

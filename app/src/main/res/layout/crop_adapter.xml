@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rvRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgCrop"
+        android:layout_width="@dimen/img50"
+        android:layout_height="@dimen/img50"
+        android:layout_marginHorizontal="@dimen/margin10"
+        android:layout_marginVertical="@dimen/margin10"
+        android:src="@drawable/wheat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/cropName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Crop name"
+        android:textSize="@dimen/textSize24"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/fieldName"
+        android:text="Field name"
+        android:textSize="@dimen/textSize24"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineRigth"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <android.support.constraint.Guideline
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/guideline"
+        app:layout_editor_absoluteX="@dimen/margin100"
+        app:layout_constraintGuide_percent="0.17"
+
+        ></android.support.constraint.Guideline>
+
+
+    <android.support.constraint.Guideline
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/guidelineRigth"
+        app:layout_editor_absoluteX="@dimen/margin100"
+        app:layout_constraintGuide_percent="0.5"
+
+        ></android.support.constraint.Guideline>
+</android.support.constraint.ConstraintLayout>

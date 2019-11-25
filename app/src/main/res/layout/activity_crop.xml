@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ActivityCrop"
+        android:background="@color/Grey">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin30"
+            android:textSize="@dimen/textSize32"
+            android:text="Add a crop"
+            android:id="@+id/tvaddCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Spinner
+            android:id="@+id/spinCropName"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/margin30"
+            android:layout_marginTop="@dimen/margin30"
+            android:layout_marginEnd="@dimen/margin30"
+            android:background="@color/White"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvaddCrop" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height30"
+            android:id="@+id/etSeedPrice"
+            android:layout_marginLeft="@dimen/margin30"
+            android:layout_marginStart="@dimen/margin30"
+            android:layout_marginTop="@dimen/margin30"
+            android:layout_marginEnd="@dimen/margin30"
+            android:layout_marginRight="@dimen/margin30"
+            android:hint="Seed price per kg"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@+id/spinCropName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/White"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height30"
+            android:id="@+id/etSeedWeight"
+            android:layout_marginLeft="@dimen/margin30"
+            android:layout_marginStart="@dimen/margin30"
+            android:layout_marginTop="@dimen/margin30"
+            android:layout_marginEnd="@dimen/margin30"
+            android:layout_marginRight="@dimen/margin30"
+            android:hint="Seed weight in kg"
+            android:inputType="numberDecimal"
+            app:layout_constraintTop_toBottomOf="@+id/etSeedPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/White"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height30"
+            android:id="@+id/etFieldName"
+            android:layout_marginLeft="@dimen/margin30"
+            android:layout_marginStart="@dimen/margin30"
+            android:layout_marginTop="@dimen/margin30"
+            android:layout_marginEnd="@dimen/margin30"
+            android:layout_marginRight="@dimen/margin30"
+            android:hint="Name of a field"
+            android:inputType="text"
+            app:layout_constraintTop_toBottomOf="@+id/etSeedWeight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/White"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height30"
+            android:id="@+id/etPesticides"
+            android:layout_marginLeft="@dimen/margin30"
+            android:layout_marginStart="@dimen/margin30"
+            android:layout_marginTop="@dimen/margin30"
+            android:layout_marginEnd="@dimen/margin30"
+            android:layout_marginRight="@dimen/margin30"
+            android:hint="Pesticides"
+            app:layout_constraintTop_toBottomOf="@+id/etFieldName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/White"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height30"
+            android:id="@+id/tvDate"
+            android:text="Choose a seeding date:"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/margin30"
+            android:layout_marginStart="@dimen/margin30"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginEnd="@dimen/margin30"
+            android:layout_marginRight="@dimen/margin30"
+            android:textSize="@dimen/textSize24"
+            app:layout_constraintTop_toBottomOf="@+id/etPesticides"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/datePicker"
+            android:layout_marginLeft="@dimen/margin30"
+            android:layout_marginStart="@dimen/margin30"
+            android:layout_marginTop="@dimen/margin10"
+            android:layout_marginEnd="@dimen/margin30"
+            android:layout_marginRight="@dimen/margin30"
+            android:layout_marginBottom="@dimen/margin30"
+            app:layout_constraintTop_toBottomOf="@+id/tvDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btnMap"
+            android:headerBackground="@color/Malaktit"
+            android:calendarTextColor="@color/Black"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMap"
+            android:layout_marginLeft="@dimen/margin30"
+            android:layout_marginStart="@dimen/margin30"
+            android:layout_marginEnd="@dimen/margin30"
+            android:layout_marginRight="@dimen/margin30"
+            android:layout_marginBottom="@dimen/margin30"
+            app:layout_constraintTop_toBottomOf="@+id/datePicker"
+            app:layout_constraintBottom_toTopOf="@id/btnSave"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/Malaktit"
+            android:text="Show on the map"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSave"
+            android:onClick="onClickSave"
+            android:layout_marginBottom="@dimen/margin30"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnAdvance"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@color/Malaktit"
+            android:text="Save"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAdvance"
+            android:onClick="onClickAdvance"
+            android:layout_marginBottom="@dimen/margin30"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnSave"
+            android:background="@color/Malaktit"
+            android:text="Advance to tasks"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

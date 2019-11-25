@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin30">30dp</dimen>
+    <dimen name="margin100">100dp</dimen>
+    <dimen name="margin60">60dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="textSize32">32sp</dimen>
+    <dimen name="textSize24">24sp</dimen>
+    <dimen name="textSize16">16sp</dimen>
+    <dimen name="img50">50dp</dimen>
+    <dimen name="height30">30dp</dimen>
+</resources>
